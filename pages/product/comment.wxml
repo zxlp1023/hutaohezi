@@ -1,0 +1,56 @@
+<!--comment.wxml-->
+<view class="comment-hd">
+  <view class="container">
+    <text bindtap="menuClick" data-num="1" class="comment-btn  {{on == 1? 'on' : ''}}">全部({{all}})</text>
+    <text bindtap="menuClick"  data-num="2" class="comment-btn ml30 {{on == 2 ? 'on' : ''}}">有图({{haveImg}})</text>
+  </view>
+</view>
+<view class="container">
+  <view class="comment-bd">
+    <view hidden="{{on != 1}}">
+      <view class="pro-comment mt30" wx:for="{{commentList}}" wx:key="{{item.id}}">
+        <view class="pro-hd flex mt20">
+          <view class="pro-hd-l">
+            <image class="pro-hd-img" src="/img/head.jpg" />
+          </view>
+          <view class="pro-hd-r ml10">
+            <view class="pro-hd-title fz28">漫漫小仙女</view>
+          </view>
+        </view>
+        <view class="huia09 mt10">
+          2017.06.28  14:20  PARK双眼皮+开后眼角
+        </view>
+        
+        <view class="fz26 mt10">
+          超开心的，因为眼睛大了整个人都变得很洋气~对我的职业 生涯真的太有帮助了！
+        </view>
+        <view class="mt15">
+          <image class="pro-comment-img" wx:for="{{item.img}}" wx:for-item="itemImg" wx:key="{{item.id}}" src="{{itemImg}}" />
+        </view>
+      </view>
+    </view>
+    <view hidden="{{on != 2}}">
+      <view class="pro-comment mt30" wx:for="{{imgComment}}" wx:key="{{item.id}}">
+        <view class="pro-hd flex mt20">
+          <view class="pro-hd-l">
+            <image class="pro-hd-img" src="/img/head.jpg" />
+          </view>
+          <view class="pro-hd-r ml10">
+            <view class="pro-hd-title fz28">漫漫小仙女</view>
+          </view>
+        </view>
+        <view class="huia09 mt10">
+          2017.06.28  14:20  PARK双眼皮+开后眼角
+        </view>
+        
+        <view class="fz26 mt10">
+          超开心的，因为眼睛大了整个人都变得很洋气~对我的职业 生涯真的太有帮助了！
+        </view>
+        <view class="mt15">
+          <image class="pro-comment-img" wx:for="{{item.img}}" wx:for-item="itemImg" wx:key="{{item.id}}" src="{{itemImg}}" />
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

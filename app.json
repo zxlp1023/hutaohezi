@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/confirmOrder/confirmOrder",
+    "pages/product/product",
+    "pages/product/comment",
+    "pages/meipin/meipin",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "胡桃盒子",
+    "navigationBarTextStyle": "black"
+  }
+}

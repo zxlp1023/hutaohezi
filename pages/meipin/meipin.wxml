@@ -1,0 +1,23 @@
+<!--meipin.wxml-->
+<view class="container">
+  <view class="flex-between meipin">
+    <view>
+      <image class="meipin-img" src="/img/head3.jpg" />
+    </view>
+    <view>
+      <view class="fz32">{{title}}</view>
+      <view class="huia09">院长施术PARK双眼皮，四层缝合术避开大 血管恢复更快，限量发售。</view>
+      <view class=" hui888 fz26 mt10">{{group}}人团·已团{{sales}}份</view>
+      <view class="fz26">
+        <text class="fz38 red238">￥{{price}}</text>
+        <text class="hui888 ml10">美拼省 5801 元</text>
+      </view>
+    </view>
+  </view>
+  <view class="text-center">
+    <image class="meipin-people" src="/img/head2.jpg" />
+    <image class="meipin-people meipin-add" src="/img/add.png" />
+  </view>
+  <view class="text-center mt10 fz28">仅剩  <text class="pink">1</text>  个名额，23:33:16  后结束</view>
+  <navigator url="" class="btn-red btn-red-full mt30 fz38"  >去美拼</navigator>
+</view>

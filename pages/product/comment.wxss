@@ -1,0 +1,10 @@
+/* comment.wxss */
+.comment-hd{ position: fixed; top: 0; left: 0; width: 100%; padding-bottom: 25rpx; background: #fff; }
+.comment-btn{width: 148rpx;line-height: 48rpx; color: #888; border:1px solid #8d8d8d; font-size: 26rpx; display: inline-block; border-radius: 8rpx; text-align: center; box-sizing: border-box;}
+
+.on{color:  #e1a7a3; border:1px solid #e1a7a3;}
+
+
+.comment-bd{padding-top: 50rpx;}
+/* 评论 */
+.pro-comment{ border-top:1px solid #e8e8e8;}

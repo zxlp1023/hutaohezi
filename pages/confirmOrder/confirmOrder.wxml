@@ -1,0 +1,19 @@
+<!--pages/confirmOrder/confirmOrder.wxml-->
+<view class="container">
+  <view class="flex-between meipin">
+    <view>
+      <image class="meipin-img" src="/img/head3.jpg" />
+    </view>
+    <view>
+      <view class="fz32">{{title}}</view>
+      <view class="huia09">院长施术PARK双眼皮，四层缝合术避开大 血管恢复更快，限量发售。</view>  
+      <view>
+        <text>-</text>
+        <text>1</text>
+        <text>+</text>
+      </view>    
+    </view>
+  </view>
+  
+</view>
+  

@@ -1,0 +1,170 @@
+<!--product.wxml-->
+<view class="container">
+  <swiper class="product-swiper"  indicator-dots="true" indicator-color="#fff" indicator-active-color="#e0a7a3"    autoplay="true"   skip-hidden-item-layout="{{isshow}}" >
+    <block wx:for="{{imgUrls}}" wx:key="{{item.id}}">
+      <swiper-item>
+        <image src="{{item}}" class="product-slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="flex-between mt20">
+    <view class="fz32">{{title}}</view>
+    <view class=" hui5f">
+      <text class="oldPrice hui888 ">￥{{oldPrice}}</text>
+      <text class="fz38 red238">￥{{price}}</text>
+    </view>
+  </view>
+
+  <view class="flex-between">
+    <view class=" hui888">已售:{{sales}} / {{group}}人团</view>
+    <view class="fz26 red238">
+      <text>月供:{{monthPay}}元/期</text>
+    </view>
+  </view>
+</view> 
+
+<view class=" container-full ping-box mt20">
+  <view class="flex-between hui5f">
+    <view class="fz26">3人在美拼</view>
+    <view class=" hui888" bindtap="showPing">查看更多></view>
+  </view>
+  <view class="flex-between mt10">
+    <view class="pro-hd flex">
+      <view class="pro-hd-l">
+        <image class="pro-hd-img" src="/img/head.jpg" />
+      </view>
+      <view class="pro-hd-r ml10">
+        <view class="pro-hd-title fz28">羊羊羊</view>
+        <view class="pro-hd-intro  hui5f">还差1人，剩余23:33:16</view>
+      </view>
+    </view>
+    <view>
+      <navigator class="btn-red pro-btn-red" url="/pages/meipin/meipin">去美拼</navigator>
+    </view>
+  </view>
+</view>
+
+<view class="container pro-comment">
+  <view class="pro-comment-hd">
+    <text>用户评论(11)条</text>
+    <navigator url="/pages/product/comment"  class="hui888 fr" >查看更多></navigator>
+  </view>
+  <view class="pro-hd flex mt20">
+    <view class="pro-hd-l">
+      <image class="pro-hd-img" src="/img/head.jpg" />
+    </view>
+    <view class="pro-hd-r ml10">
+      <view class="pro-hd-title fz28">漫漫小仙女</view>
+    </view>
+  </view>
+  <view class="huia09 mt10">
+    2017.06.28  14:20  PARK双眼皮+开后眼角
+  </view>
+  
+  <view class="fz26 mt10">
+    超开心的，因为眼睛大了整个人都变得很洋气~对我的职业 生涯真的太有帮助了！
+  </view>
+  <view class="mt15">
+    <image class="pro-comment-img" src="/img/head2.jpg" />
+    <image class="pro-comment-img" src="/img/head2.jpg" />
+    <image class="pro-comment-img" src="/img/head2.jpg" />
+    <image class="pro-comment-img" src="/img/head2.jpg" />
+    <image class="pro-comment-img" src="/img/head2.jpg" />
+  </view>
+  
+</view>
+<view class="pro-msg">
+  <view class="mt55">
+    内容开始
+    <image class="pro-msg-img" src="/img/pro-msg1.jpg"  lazy-load="true" mode="widthFix"/>
+    内容结束
+  </view>
+  <view class="container ">
+    <view class="pro-msg-notice">
+      <view class="fz26 text-center mtb15">-预约须知-</view>
+      <view class="hui888">
+        1、预约金用于预定此拼团项目。
+      </view>
+      <view class="hui888">
+        2、预约金支付后拼团成功，工作人员会立即与您取得联系，或点击在线咨询，确认到院时间。
+      </view>
+      <view class="hui888">
+        3、预约成功后，可在“我的订单”-“已成团”查找到该订单。
+      </view>
+    </view>
+    <view class="pro-msg-notice">
+      <view class="fz26 text-center mtb15">- 分期须知 -</view>
+      <view class="hui888">
+        1、选择分期后，到院消费仅需带上身份证+银行卡即可办理。
+      </view>
+      <view class="hui888">
+        2、年龄未满18岁不可办理分期。
+      </view>
+      <view class="hui888">
+        3、0首付，0利息，变美无压力。
+      </view>
+    </view>
+
+    <view class="pro-msg-notice">
+      <view class="fz26 text-center mtb15">- 退款须知 -</view>
+      <view class="hui888">
+        1、未拼团成功的订单，可在“个人主页”-“我的订单”-“拼团        失败”中找到订单。
+      </view>
+      <view class="hui888">
+        2、进入“订单详情”后，点击“申请退款”，提交退款申请。
+      </view>
+      <view class="hui888">
+        3、申请退款后，预约金将会在3-7个工作日自动返还账户。
+      </view>
+      <view class="hui888">
+        4、已成团订单均不可退款。
+      </view>
+    </view>
+  </view>
+  <view class="text-center fz26 pink mt55" >
+    <view> 胡桃盒子 </view>
+    <view>带你绕过变美路上的弯路深坑</view>
+  </view>
+  
+</view>
+
+<view class="pro-foot">
+  <navigator class="pro-foot-item">
+    <image class="pro-foot-item-img" src="/img/heart2.png" />
+    在线咨询
+  </navigator>
+  <navigator class="pro-foot-item">
+    <view>单独购买</view>
+    <view>预约金 ￥300</view>
+  </navigator>
+  <navigator class="pro-foot-item">
+    <view>一键开团</view>
+    <view>预约金 ￥300</view>
+  </navigator>
+</view>
+
+
+<view class="ping" hidden="{{ping}}">
+  <view class="ping-con">
+    <image src="/img/close.png" class="ping-close" bindtap='hidePing' />
+    <view class="ping-hd pink">正在美拼</view>
+    <view class="flex-between ping-item" wx:for="{{[1,2,3]}}">
+      <view class="pro-hd flex">
+        <view class="pro-hd-l">
+          <image class="pro-hd-img" src="/img/head.jpg" />
+        </view>
+        <view class="pro-hd-r ml10">
+          <view class="pro-hd-title">
+            <text class="fz28">羊羊羊</text>
+            <text class="hui888 ml10">还差1人</text>
+          </view>
+          <view class="pro-hd-intro hui888">剩余23:33:16</view>
+        </view>
+      </view>
+      <view>
+        <navigator class="btn-red ping-btn" url="/pages/meipin/meipin">去美拼</navigator>
+      </view>
+    </view>
+  </view>
+</view>
