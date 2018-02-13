@@ -1,32 +1,35 @@
-// pages/confirmOrder/confirmOrder.js
+// pages/orders/orders.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: 'PARK双眼皮+开后眼角',
-    num:1
+    tab: 1 , //1待付款  2待成团  3已成团  4待评论
+    waitPay:[
+      {
+        id:1,
+        orderId:'2035666',
+        thumb:'/img/head3.jpg',
+        title:'PARK双眼皮+开后眼角',
+        intro:'院长施术PARK双眼皮，四层缝合术避开大血管 恢复更快，限量发售。',
+        price:'300.00',
+        payTime:'14:31'
+      }
+    ]
   },
-  minus:function () {
-    let num = this.data.num
-    if(num > 1){ num--}
+  menuClick:function (e) {
     this.setData({
-      num:num
-    })
-  },
-  plus:function () {
-    let num = this.data.num
-    num++
-    this.setData({
-      num:num
+      tab: e.target.dataset.num
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  
+  onLoad: function (e) {
+    this.setData({
+        tab: e.tab
+    })
   },
 
   /**

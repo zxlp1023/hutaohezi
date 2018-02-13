@@ -1,27 +1,13 @@
-// pages/confirmOrder/confirmOrder.js
+// pages/my/my.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: 'PARK双眼皮+开后眼角',
-    num:1
+    name: '小白最可爱'
   },
-  minus:function () {
-    let num = this.data.num
-    if(num > 1){ num--}
-    this.setData({
-      num:num
-    })
-  },
-  plus:function () {
-    let num = this.data.num
-    num++
-    this.setData({
-      num:num
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

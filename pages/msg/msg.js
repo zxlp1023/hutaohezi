@@ -1,25 +1,16 @@
-// pages/confirmOrder/confirmOrder.js
+// pages/msg/msg.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: 'PARK双眼皮+开后眼角',
-    num:1
+    active:1
   },
-  minus:function () {
-    let num = this.data.num
-    if(num > 1){ num--}
+  msgTab: function (e) {
+    console.log(e)
     this.setData({
-      num:num
-    })
-  },
-  plus:function () {
-    let num = this.data.num
-    num++
-    this.setData({
-      num:num
+      active: e.target.dataset.num
     })
   },
   /**

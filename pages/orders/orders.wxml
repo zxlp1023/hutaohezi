@@ -1,0 +1,113 @@
+<!--pages/orders/orders.wxml-->
+<view class="container">
+  <view class="fz30 order-menu">
+    <text class="{{tab == 1 ? 'on' : ''}}" bindtap="menuClick" data-num="1">待付款</text>
+    <text class="{{tab == 2 ? 'on' : ''}}" bindtap="menuClick" data-num="2">待成团</text>
+    <text class="{{tab == 3 ? 'on' : ''}}" bindtap="menuClick" data-num="3">已成团</text>
+    <text class="{{tab == 4 ? 'on' : ''}}" bindtap="menuClick" data-num="4">待评论</text>
+  </view>
+  <view class="mt40">
+    <view hidden="{{tab != 1}}">
+      <block wx:for="{{waitPay}}" wx:key="{{item.id}}">
+        <template is="tab1" data="{{...item}}"></template>
+      </block>
+    </view>
+    <view hidden="{{tab != 2}}">
+      <block wx:for="{{waitPay}}" wx:key="{{item.id}}">
+        <template is="tab2" data="{{...item}}"></template>
+      </block>
+    </view>
+    <view hidden="{{tab != 3}}">
+      <block wx:for="{{waitPay}}" wx:key="{{item.id}}">
+        <template is="tab3" data="{{...item}}"></template>
+      </block>
+    </view>
+    <view hidden="{{tab != 4}}">
+      <block wx:for="{{waitPay}}" wx:key="{{item.id}}">
+        <template is="tab4" data="{{...item}}"></template>
+      </block>
+    </view>
+  </view>
+</view>
+
+<template name="tab1">
+  <view class="flex-between fz28 mt55">
+    <view>订单编号:{{orderId}}</view>
+    <view class="hui888 fz24">取消订单</view>
+  </view>
+  <view class="flex order-item">
+    <view>
+      <image class="orders-img" src="{{thumb}}" />
+    </view>
+    <view>
+      <view class="fz26">{{title}}</view>
+      <view class="huia09">{{intro}}</view>     
+    </view>
+  </view>
+  <view class="flex-between fz30">
+    <view>应付:￥{{price}}</view>
+    <view class="btn-red btn-order">待付款{{payTime}}</view>
+  </view>
+</template>
+
+<template name="tab2">
+  <view class="flex-between fz28 mt55">
+    <view>订单编号:{{orderId}}</view>
+    <view class="hui888 fz24">取消订单</view>
+  </view>
+  <view class="flex order-item">
+    <view>
+      <image class="orders-img" src="{{thumb}}" />
+    </view>
+    <view>
+      <view class="fz26">{{title}}</view>
+      <view class="huia09">{{intro}}</view>     
+    </view>
+  </view>
+  <view class="flex-between fz30">
+    <view>已付:￥{{price}}</view>
+    <view class="btn-red btn-order">待成团{{payTime}}</view>
+  </view>
+</template>
+
+<template name="tab3">
+  <view class="flex-between fz28 mt55">
+    <view>订单编号:{{orderId}}</view>
+    <view class="hui888 fz24">交易成功</view>
+  </view>
+  <view class="flex order-item">
+    <view>
+      <image class="orders-img" src="{{thumb}}" />
+    </view>
+    <view>
+      <view class="fz26">{{title}}</view>
+      <view class="huia09">{{intro}}</view>     
+    </view>
+  </view>
+  <view class="flex-between fz30">
+    <view> </view>
+    <view>已付:￥{{price}}</view>
+  </view>
+</template>
+
+
+<template name="tab4">
+  <view class="flex-between fz28 mt55">
+    <view>订单编号:{{orderId}}</view>
+    <view class="hui888 fz24">交易成功</view>
+  </view>
+  <view class="flex order-item">
+    <view>
+      <image class="orders-img" src="{{thumb}}" />
+    </view>
+    <view>
+      <view class="fz26">{{title}}</view>
+      <view class="huia09">{{intro}}</view>     
+    </view>
+  </view>
+  <view class="flex-between fz30">
+    <view>已付:￥{{price}}</view>
+    <navigator url='/pages/evaluate/evaluate' class="btn-red">评论</navigator>
+  </view>
+</template>
+

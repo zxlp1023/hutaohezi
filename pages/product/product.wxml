@@ -130,15 +130,15 @@
 </view>
 
 <view class="pro-foot">
-  <navigator class="pro-foot-item">
+  <navigator url='/pages/msg/msg' class="pro-foot-item">
     <image class="pro-foot-item-img" src="/img/heart2.png" />
     在线咨询
   </navigator>
-  <navigator class="pro-foot-item">
+  <navigator url='/pages/confirmOrder/confirmOrder' class="pro-foot-item">
     <view>单独购买</view>
     <view>预约金 ￥300</view>
   </navigator>
-  <navigator class="pro-foot-item">
+  <navigator url='/pages/confirmOrder/confirmOrder' class="pro-foot-item">
     <view>一键开团</view>
     <view>预约金 ￥300</view>
   </navigator>

@@ -55,15 +55,15 @@
 <view class="foot">
   <view class="foot-bg"></view>
   <view class="foot-items">
-    <navigator url="" class="foot-item" hover-class="none">
+    <navigator url="/pages/index/index" class="foot-item" hover-class="none">
       <image class='foot-icon1' src="../../img/icon/cart1.png" /> 
     </navigator>
 
-    <navigator url="" class="foot-item" hover-class="none">
+    <navigator url="/pages/sheSaid/sheSaid" class="foot-item" hover-class="none">
       <image class='foot-icon2' src="../../img/icon/diamond0.png" /> 
     </navigator>
 
-    <navigator url="" class="foot-item" hover-class="none">
+    <navigator url="/pages/my/my" class="foot-item" hover-class="none">
       <image class='foot-icon3' src="../../img/icon/my0.png" /> 
     </navigator>
   </view>

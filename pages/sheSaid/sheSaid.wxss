@@ -1,0 +1,6 @@
+/* pages/sheSaid/sheSaid.wxss */
+.list-flex-between{ margin-top: 60rpx; display: flex; justify-content: space-between; padding-bottom: 130rpx; }
+.list-item{ box-shadow: 0 1rpx 5rpx #ddd; margin-bottom: 30rpx;}
+.list-item-img{width: 327rpx;   }
+
+.list-item-con{ padding: 20rpx;}

@@ -1,25 +1,26 @@
-// pages/confirmOrder/confirmOrder.js
+// pages/evaluate/evaluate.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title: 'PARK双眼皮+开后眼角',
-    num:1
+    anonymity:true,
+    evlClass:'1'
   },
-  minus:function () {
-    let num = this.data.num
-    if(num > 1){ num--}
+  feel:function (e) { // 好中差评
+    // console.log(e.currentTarget.dataset.num)
     this.setData({
-      num:num
+      evlClass: e.currentTarget.dataset.num
     })
   },
-  plus:function () {
-    let num = this.data.num
-    num++
+
+  upImg:function () {
+    
+  },
+  isAnonymity: function () {
     this.setData({
-      num:num
+      anonymity: !this.data.anonymity
     })
   },
   /**

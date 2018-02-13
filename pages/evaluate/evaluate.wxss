@@ -1,0 +1,16 @@
+/* pages/evaluate/evaluate.wxss */
+.evl{color: #c6c5ca;}
+.evl-head-img{width: 96rpx;height: 96rpx;border-radius: 10rpx;}
+.evl-on{ color: #e1a7a3;}
+.evl-icon{ width: 34rpx;height: 28rpx; margin-right: 10rpx; display: inline-block; }
+
+.evl-flex{ flex: 1; justify-content: space-around; display: flex; align-items: center;}
+
+.evl-con{  border: 1px solid #e8e8e8; border-left: 0; border-right: 0; padding: 20rpx 0; margin:20rpx 0;}
+
+.inputVal{ height: 150rpx; width: 100%; line-height: 2;}
+
+.up-img{ width: 159rpx;height: 159rpx;}
+
+.evl-select{ width: 34rpx;height: 34rpx;}
+

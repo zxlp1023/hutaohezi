@@ -1,0 +1,38 @@
+<!--pages/evaluate/evaluate.wxml-->
+<view class="container evl">
+  <view class="flex-between">
+    <view><image class="evl-head-img" src="/img/head3.jpg" /></view>
+    <!--<view><image src="/img/head.jpg" /></view>-->
+    <view class="evl-flex fz30"> 
+      <view bindtap="feel" data-num="1">
+        <image class="evl-icon" src="{{evlClass == 1 ? '/img/icon/evl-good1.png' : '/img/icon/evl-good0.png'}}" />
+        <text class="{{evlClass == 1 ? 'pink' : ''}}">好评</text>
+      </view>
+      <view bindtap="feel" data-num="2">
+        <image class="evl-icon" src="{{evlClass == 2 ? '/img/icon/evl-middle1.png' : '/img/icon/evl-middle0.png'}}" />
+        <text class="{{evlClass == 2 ? 'pink' : ''}}">中评</text>
+      </view>
+      <view bindtap="feel" data-num="3">
+        <image class="evl-icon" src="{{evlClass == 3 ? '/img/icon/evl-bad1.png' : '/img/icon/evl-bad0.png'}}" />
+        <text class="{{evlClass == 3 ? 'pink' : ''}}">差评</text>
+      </view>
+    </view>
+  </view>
+  <view class="evl-con">
+    <textarea maxlength="200" class="inputVal"  placeholder="输入你的评论吧~" placeholder-style="color:#c6c5ca"   auto-focus focus="true" ></textarea>
+    <view>
+      <image bindtap="upImg" src="/img/icon/upImg.png" class="up-img mt10" />
+    </view>
+  </view>
+  <view class="flex-between mt30">
+    <view bindtap="isAnonymity">
+      <icon hidden="{{anonymity != 1}}" class="icon-small" size="20" type="success" color="#e1a7a3"></icon>
+      <icon hidden="{{anonymity != 0}}"  class="icon-small" size="20" type="circle"></icon>
+      <text class="ml5 hui5f">匿名</text>
+    </view>
+    <view >
+      你写的评价会以匿名的形式展现
+    </view>
+  </view>
+  <button class="btn-red btn-red-full mt55" bindtap="defaultTap">发布</button>
+</view>

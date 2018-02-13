@@ -1,10 +1,16 @@
 {
   "pages": [
-    "pages/confirmOrder/confirmOrder",
+    "pages/index/index",
     "pages/product/product",
+    "pages/my/my",
+    "pages/msg/msg",
+    "pages/evaluate/evaluate",
+    "pages/refund/refund",
+    "pages/orders/orders",
+    "pages/sheSaid/sheSaid",
+    "pages/confirmOrder/confirmOrder",
     "pages/product/comment",
-    "pages/meipin/meipin",
-    "pages/index/index"
+    "pages/meipin/meipin"
   ],
   "window": {
     "backgroundTextStyle": "light",

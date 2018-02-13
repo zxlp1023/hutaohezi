@@ -19,5 +19,5 @@
     <image class="meipin-people meipin-add" src="/img/add.png" />
   </view>
   <view class="text-center mt10 fz28">仅剩  <text class="pink">1</text>  个名额，23:33:16  后结束</view>
-  <navigator url="" class="btn-red btn-red-full mt30 fz38"  >去美拼</navigator>
+  <navigator url="/pages/confirmOrder/confirmOrder" class="btn-red btn-red-full mt30 fz38"  >去美拼</navigator>
 </view>

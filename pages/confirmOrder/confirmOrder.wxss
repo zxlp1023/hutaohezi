@@ -1,2 +1,10 @@
 /* pages/confirmOrder/confirmOrder.wxss */
 .meipin-img{width: 150rpx;height: 150rpx; margin-right: 20rpx;}
+.w86{width: 86rpx;}
+.w106{width: 106rpx;}
+
+.border-10{border:1px solid #e5a6a2; border-radius: 10rpx; padding: 10rpx; box-sizing: border-box; } 
+
+
+.order-confirm-foot{   position: fixed; bottom: 0; width: 100%; align-items: center; background: #ffffff; box-shadow:0 0 5px #ddd}
+.btn-pay{ background: #e0a7a3; color: #ffffff; border: none; border-radius: 0; line-height: 90rpx; width: 214rpx; text-align: center;}

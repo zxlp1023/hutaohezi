@@ -1,0 +1,59 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <view class="my-hd text-center">
+    <image class="my-hd-img" src="/img/head3.jpg" />
+    <view class="fz30">{{name}}</view>
+  </view>
+
+  <view class='my-col'>
+    <view class="fz30 mt40">我的订单</view>
+    <view class="flex mt20  my-title-order">
+      <navigator url="/pages/orders/orders?tab=1" class="my-item" >
+        <image class="my-item-img" mode="aspectFit" src="/img/icon/wait-pay.png" />
+        <view>待付款</view>
+      </navigator>
+      <navigator url="/pages/orders/orders?tab=2"  class="my-item" >
+        <image class="my-item-img" mode="aspectFit" src="/img/icon/wait-group.png" />
+        <view>待成团</view>
+      </navigator>
+      <navigator url="/pages/orders/orders?tab=3"  class="my-item" >
+        <image class="my-item-img" mode="aspectFit" src="/img/icon/grouped.png" />
+        <view>已成团</view>
+      </navigator>
+      <navigator url="/pages/orders/orders?tab=4"  class="my-item" >
+        <image class="my-item-img" mode="aspectFit" src="/img/icon/wait-evaluate.png" />
+        <view>待评论</view>
+      </navigator>
+    </view>
+    <navigator url="/pages/msg/msg" class="my-list ">
+      <image src="/img/icon/msg.png" class="my-list-img" /> 消息中心
+    </navigator>
+    <navigator url="/pages/refund/refund" class="my-list ">
+      <image src="/img/icon/refund.png" class="my-list-img" /> 我的退款
+    </navigator>
+    <navigator url="" class="my-list ">
+      <image src="/img/icon/integral.png" class="my-list-img" /> 我的积分
+    </navigator>
+  </view>
+
+</view>
+
+
+
+<view class="foot">
+  <view class="foot-bg"></view>
+  <view class="foot-items">
+    <navigator url="/pages/index/index" class="foot-item" hover-class="none">
+      <image class='foot-icon1' src="../../img/icon/cart0.png" /> 
+    </navigator>
+
+    <navigator url="/pages/sheSaid/sheSaid" class="foot-item" hover-class="none">
+      <image class='foot-icon2' src="../../img/icon/diamond0.png" /> 
+    </navigator>
+
+    <navigator url="/pages/my/my" class="foot-item" hover-class="none">
+      <image class='foot-icon3' src="../../img/icon/my1.png" /> 
+    </navigator>
+  </view>
+</view>
+

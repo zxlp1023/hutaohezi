@@ -1,0 +1,38 @@
+/* pages/msg/msg.wxss */
+page{background: #f6f6f6;}
+
+.w80{ width: 80rpx; height: 80rpx; border-radius: 50%;}
+
+.msg-flex{justify-content: space-around;}
+.msg-icon{ width: 34rpx;height: 28rpx; margin-right: 10rpx; vertical-align: middle;}
+.msg-on{color: #e1a7a3;}
+
+.msg-hd{background: #fff; line-height: 100rpx;}
+.msg-con{ padding:0 0 130rpx;}
+.msg-item{ display: flex; margin-top: 40rpx;}
+
+.msg-box{display: flex; flex:1; }
+.message{ flex:1; display: inline-block;  background: #fff; border-radius: 14rpx; padding: 10rpx; border:1rpx solid #e2e2e2; margin: 0 0 0 12rpx; }
+
+.sanjiao{ position: relative; top:15rpx;display: inline-block;  width: 12rpx; height: 12rpx; }
+.sanjiao:before{
+    content: '';
+  position: absolute; 
+  top: 10rpx;
+  left: 0;
+  border:12rpx solid red;
+  border-color: transparent #e2e2e2 transparent transparent;
+}
+.sanjiao:after{
+    content: '';
+  position: absolute; 
+  top: 10rpx;
+  left: 2rpx;
+  border:12rpx solid #ddd;
+  border-color: transparent #fff transparent transparent;
+}
+
+.msg-foot{ display: flex; align-items: center; height: 90rpx;}
+.msg-input{ flex:1; background: #f6f6f6; border-radius: 20rpx; margin-right: 50rpx;padding: 0 20rpx; }
+.btn-red-msg{ width: 100rpx; height: 50rpx; line-height: 50rpx; border-radius: 6rpx;}
+

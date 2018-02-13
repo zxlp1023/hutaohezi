@@ -25,17 +25,13 @@ button:last-child{
 .page-foot{
   margin-top: 50rpx;
 } */
-.sy-hd{ overflow: hidden; width:100%; }
-.sy-hd-l{font-size: 80rpx; line-height: 1;}
-.sy-hd-r{font-size: 28rpx; padding: 0 10rpx; margin-top: 26rpx;  }
+
 .category{ padding: 10px 0;}
-.sy-hd-r-line{text-decoration: underline; padding-right: 4rpx;}
+
 .category-text{ margin-top: 20rpx;  font-size: 26rpx; color: #363636; display: inline-block;width:25%; text-align: center; line-height: 3;}
  .category-text:nth-child(4n+1){text-align: left;} 
 /* .category-text:nth-child(4n+4){text-align: right} */
 /* banner */
-.index-swiper{ width:654rpx; height: 366rpx;margin:0 auto; margin-top: 40rpx;}
-.index-slide-image{ width:654rpx; height: 366rpx;}
 
 
 /* 箭头 */

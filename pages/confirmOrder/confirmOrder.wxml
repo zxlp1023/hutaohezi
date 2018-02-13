@@ -5,15 +5,67 @@
       <image class="meipin-img" src="/img/head3.jpg" />
     </view>
     <view>
-      <view class="fz32">{{title}}</view>
+      <view class="fz26">{{title}}</view>
       <view class="huia09">院长施术PARK双眼皮，四层缝合术避开大 血管恢复更快，限量发售。</view>  
-      <view>
-        <text>-</text>
-        <text>1</text>
-        <text>+</text>
+      <view class="num  hui5f fr">
+        <text class="num-control num-minus" bindtap="minus">-</text>
+        <text class="num-value">{{num}}</text>
+        <text class="num-control num-plus" bindtap="plus">+</text>
       </view>    
     </view>
   </view>
-  
+  <view class="inputBox  fz28">
+    
+    <view class="flex-between mt30">
+      <view class="flex">
+        <view class="w86">姓名: </view><input confirm-type="next" confirm-hold="true" class="border-b ml10" type="text" placeholder="必填" auto-focus  />
+      </view>
+      <view class="flex ml30">
+        <view class="w86">电话:</view><input maxlength="11" confirm-type="done"  class="border-b ml10"  type="number" placeholder="必填"  />
+      </view>
+    </view>
+
+    <view class="flex-between mt30">
+      <view>
+        <label>是否需要分期 <checkbox class="ml30" value="cb" /></label>
+      </view>  
+      <view class="pink2 fz24">
+        *0首付  0利息  变美无负担
+      </view>
+    </view>
+    <view class="flex-between mt30">
+      <view>
+        <label>是否需要陪同 <checkbox class="ml30"  value="cb" /></label>
+      </view>  
+      <view class="pink2 fz24">
+        *全程陪同只需19元服务费
+      </view>
+    </view>
+    <view class="flex-between mt30">
+      <view class="flex">
+        <view class="w106">邀请码: </view><input  class="border-b" type="text" placeholder="" />
+      </view>
+    </view>
+
+  </view>
+  <view class="mt10 pink2 fz">
+    <view>
+      *填写邀请码即可获得以下胡桃大礼包
+    </view>
+    <view class="border-10 mt10">
+      <view>1.价值8800元的6天5晚泰国免费游 </view>
+      <view>2.价值10万的中国人保医美保险 </view>
+      <view>3.价值699元正品可爱公仔套装</view>
+      <view>4.胡桃盒子全程陪同服务</view>
+    </view>
+  </view>
 </view>
-  
+
+<view class="order-confirm-foot flex-between">
+  <view class="container fz30">
+    应付定金: ￥300.00
+  </view>
+  <view>
+    <navigator class="btn-pay fz32"  bindtap="defaultTap" >付款</navigator>
+  </view>
+</view>

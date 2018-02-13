@@ -1,12 +1,14 @@
 /**app.wxss**/
 /* 公用样式 */
 /* 颜色 */
+@import 'weui.wxss';
 page{
   color:#303030; line-height: 1.6;font-size: 24rpx;
 }
 
 .red238{color:#d23838;}
 .pink{color: #e1a7a3;}
+.pink2{ color:#e5a6a2;}
 .hui5f{color:#5f5f5f;}
 .hui888{color: #888;}
 .huia09{color: #a09696;}
@@ -16,11 +18,14 @@ page{
   width: 136rpx; height: 48rpx;line-height: 48rpx;  
   border-radius: 10rpx; font-size: 30rpx; color: #fff; padding: 0;
 }
+.btn-red-full{ width: 100%; height: 86rpx;line-height: 86rpx;}
 
 /* 字体 */
+.fz22{font-size: 22rpx;}
 .fz24{font-size: 24rpx;}
 .fz26{font-size: 26rpx;}
 .fz28{font-size: 28rpx;}
+.fz30{font-size: 30rpx;}
 .fz32{font-size: 32rpx; }
 .fz38{font-size:38rpx;}
 .fz40{font-size:40rpx;}
@@ -30,6 +35,9 @@ page{
 .text-center{ text-align: center}
 .fl{float: left}
 .fr{float: right}
+
+/* 边框  */
+.border-b{ border-bottom: 1rpx solid #ddd;}
 
 .mt10{margin-top: 10rpx;}
 .mt15{margin-top: 15rpx;}
@@ -43,6 +51,9 @@ page{
 .mtb15{margin: 15rpx 0;}
 
 
+/* 填充 */
+.pb30{padding-bottom: 30rpx;}
+
 
 
 .ml5{margin-left: 10rpx;}
@@ -50,6 +61,17 @@ page{
 .ml30{margin-left: 30rpx;}
 .flex{ display: flex; align-items: center;}
 .flex-between{ display: flex; align-items: center; justify-content: space-between}
+
+
+/* 首页 */
+.sy-hd{ overflow: hidden; width:100%; }
+.sy-hd-l{font-size: 80rpx; line-height: 1;}
+.sy-hd-r{font-size: 28rpx; padding: 0 10rpx; margin-top: 26rpx;  }
+.sy-hd-r-line{text-decoration: underline; padding-right: 4rpx;}
+
+.index-swiper{ width:654rpx; height: 366rpx;margin:0 auto; margin-top: 40rpx;}
+.index-slide-image{ width:654rpx; height: 366rpx; border-radius: 16rpx;}
+
 
 /* 价格 */
 .price{}
@@ -76,7 +98,7 @@ page{
 .pro{ margin-top: 70rpx; }
 .pro-hd{}
 .pro-hd-l{line-height: 1;}
-.pro-hd-img{ width: 70rpx;height: 70rpx;}
+.pro-hd-img{ width: 70rpx;height: 70rpx; border-radius: 50%;}
 .pro-hd-r{line-height: 1.2}
 .pro-hd-title{}
 .pro-hd-intro{}
@@ -90,3 +112,22 @@ page{
 .pro-comment-img{ width: 186rpx;height:176rpx; margin-right: 10rpx; border-radius: 10rpx; }
 
 
+/* 数量加减 */
+.num{display:flex;  text-align: center; align-items: center; font-weight: bold; }
+.num-control{border: 1rpx solid #ddd;  width: 48rpx;height: 42rpx;  display: inline-block;    font-size: 36rpx; line-height: 36rpx; }
+.num-value{ 
+  border-top: 1rpx solid #ddd;border-bottom: 1rpx solid #ddd;
+  display: inline-block;   width: 84rpx; height: 42rpx;
+}
+.num-minus{ border-radius: 8rpx 0 0 8rpx;}
+.num-plus{  border-radius:0 8rpx  8rpx 0; }
+
+
+/* 我的订单  */
+.order-menu{display: flex; justify-content: space-between;}
+.on{ color: #cc8f8f; border-bottom:4rpx solid #e0a7a3; }
+
+.order-item{ height: 172rpx; border:1rpx solid #e8e8e8; border-left:none; border-right:none; margin-top: 20rpx; margin-bottom: 20rpx;}
+.orders-img{width: 130rpx;height: 130rpx; border-radius: 8rpx; margin-right: 20rpx;}
+
+.btn-order{ width: 186rpx; height: 52rpx;line-height: 52rpx; }

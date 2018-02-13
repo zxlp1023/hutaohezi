@@ -1,0 +1,55 @@
+<!--pages/msg/msg.wxml-->
+<view class="flex msg-flex fz30 msg-hd">
+  <view bindtap="msgTab" data-num="1" class="{{ active == 1 ? 'pink' : ''}}"><image class="msg-icon" src="{{ active == 1 ? '/img/icon/msg1.png' : '/img/icon/msg0.png'}}" />客服中心</view>
+  <view bindtap="msgTab" data-num="2" class="{{ active == 2 ? 'pink' : ''}}"><image class="msg-icon" src="{{ active == 2 ? '/img/icon/display1.png' : '/img/icon/display0.png'}}" />系统消息</view>
+</view>
+<view class="msg-con">
+  <view class="container">
+    <view hidden="{{active != 1}}">
+      <view class="msg-item">
+        <image class="w80" src="/img/icon/head-kf.jpg" />
+        <view class="msg-box">
+          <view class="sanjiao"></view>
+           <view class="message">
+            <view>
+              您好！我是胡小桃~ 
+            </view>`
+            <view>
+              请问有什么可以帮助您呢？
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view hidden="{{active != 2}}">
+      <view class="msg-item">
+        <image class="w80" src="/img/icon/head-kf.jpg" />
+        <view class="msg-box">
+          <view class="sanjiao"></view>
+           <view class="message">
+            <view>
+              您好！我是胡小桃~ 
+            </view>
+            <view>
+              您的订单已拼团成功！
+可在“我的订单”中“已成团”查看该
+订单的详细信息.,更多资讯可添加胡桃
+盒子官方客服微信“hoootaobox”
+客服小姐姐等你来撩哦（笔芯）
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="foot">
+  <view class="foot-bg foot-bg-msg"></view>
+  <view class="container">
+    <view class="msg-foot">
+      <input class="msg-input"  placeholder="请输入···" placeholder-style="color:#ddd" auto-focus  />
+      <button class="btn-red btn-red-msg">发送</button>
+    </view>
+  </view>
+</view>
+

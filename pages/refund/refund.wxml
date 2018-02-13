@@ -1,0 +1,26 @@
+<!--pages/refund/refund.wxml-->
+<view class="container">
+  <block wx:for="{{refund}}" wx:key="item.id">
+    <view class="flex-between fz28 mt55">
+      <view>订单编号:{{item.orderId}}</view>
+      <view class="hui888 fz24">交易成功</view>
+    </view>
+    <view class="flex order-item">
+      <view>
+        <image class="orders-img" src="{{item.thumb}}" />
+      </view>
+      <view>
+        <view class="fz26">{{item.title}}</view>
+        <view class="huia09">{{item.intro}}</view>
+      </view>
+    </view>
+    <view class="flex-between fz30">
+      <view></view>
+      <view class="">已付:￥{{item.price}}
+        <text class="ml30">{{item.status}}</text>
+      </view>
+    </view>
+    
+    
+  </block>
+</view>
