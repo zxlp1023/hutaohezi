@@ -6,7 +6,8 @@ Page({
    */
   data: {
     anonymity:true,
-    evlClass:'1'
+    evlClass:'1',
+    imgs: []
   },
   feel:function (e) { // 好中差评
     // console.log(e.currentTarget.dataset.num)
@@ -14,9 +15,49 @@ Page({
       evlClass: e.currentTarget.dataset.num
     })
   },
-
   upImg:function () {
-    
+    const that = this;
+    wx.chooseImage({
+      count:6,
+      sizeType:['compressed'], //压缩图
+      sourceType:['album','camera'],
+      success: function(res) {
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        let tempFilePaths = res.tempFilePaths
+        let imgs = that.data.imgs
+
+        for( let i=0;i<tempFilePaths.length;i++){
+          if(imgs.length >= 6){
+            that.setData({
+              imgs:imgs
+            })
+            // return false
+          }else{
+            imgs.push(tempFilePaths[i])
+          }
+        }
+        that.setData({
+          imgs: imgs
+        })
+        // console.log(res.tempFilePaths)
+      }
+    })
+  },
+  viewImg: function (e) {
+    wx.previewImage({
+      // current: 'current', // 当前显示图片的http链接
+      // urls: [] // 需要预览的图片http链接列表
+    })
+    console.log(e)
+  },
+  deleteImg:function (e) {
+    let imgs = this.data.imgs
+    const index = e.currentTarget.dataset.index
+    imgs.splice(index,1)
+    this.setData({
+      imgs:imgs
+    })
+    // console.log(e.currentTarget.dataset.index)
   },
   isAnonymity: function () {
     this.setData({

@@ -19,10 +19,19 @@
     </view>
   </view>
   <view class="evl-con">
-    <textarea maxlength="200" class="inputVal"  placeholder="输入你的评论吧~" placeholder-style="color:#c6c5ca"   auto-focus focus="true" ></textarea>
-    <view>
-      <image bindtap="upImg" src="/img/icon/upImg.png" class="up-img mt10" />
+    <textarea maxlength="200" class="inputVal"  placeholder="输入你的评论吧~" placeholder-style="color:#c6c5ca" auto-height   auto-focus focus="true" ></textarea>
+
+    <view class="mt40">
+      <view class="thumb" wx:for="{{imgs}}" wx:key="{{index}}">
+        <icon class="close" type="clear" size="20" color="#ccc" data-index="{{index}}" bindtap="deleteImg" />
+        <image class="up-img" src="{{item}}" bindtap="viewImg" />
+      </view>
+      <view class="thumb" hidden="{{isMax}}">
+        <image bindtap="upImg" src="/img/icon/upImg.png" class="up-img mt10" />
+      </view>
     </view>
+
+
   </view>
   <view class="flex-between mt30">
     <view bindtap="isAnonymity">
