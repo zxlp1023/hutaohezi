@@ -15,7 +15,7 @@ Page({
         id:1,
         img:'/img/pro-banner.jpg',
         text:'现在恢复两周啦，',
-        pro:'韩式双眼皮+开眼角',
+        pro: ['韩式双眼皮', '开眼角'],
         time:'2017-8-23',
         head:'/img/head2.jpg',
         name:'安妮Baby'
@@ -24,7 +24,7 @@ Page({
         id:2,
         img:'/img/head.jpg',
         text:'现在恢复两周啦，感觉还不错 而且眼睛已经开始消肿了，只 是眼睛周围有一些发青，客服 说是因为在',
-        pro:'韩式双眼皮+开眼角',
+        pro: ['韩式双眼皮', '开眼角','抽脂'],
         time:'2017-8-23',
         head:'/img/head2.jpg',
         name:'安妮Baby'
@@ -33,7 +33,7 @@ Page({
         id:3,
         img:'/img/pro-banner.jpg',
         text:'现在恢复两周啦，感觉还不错 而且一些发青，客服 说是因为在恢复中,期待最终 的效果。',
-        pro:'韩式双眼皮+开眼角',
+        pro: ['韩式双眼皮', '开眼角'],
         time:'2017-8-23',
         head:'/img/head2.jpg',
         name:'安妮Baby'
@@ -42,7 +42,7 @@ Page({
         id:4,
         img:'/img/head3.jpg',
         text:'现在恢复两周啦，感觉还终 的效果。',
-        pro:'韩式双眼皮+开眼角',
+        pro: ['韩式双眼皮', '开眼角'],
         time:'2017-8-23',
         head:'/img/head2.jpg',
         name:'安妮Baby'
@@ -51,7 +51,7 @@ Page({
         id:5,
         img:'/img/pro-banner.jpg',
         text:'现在恢复两周啦，感觉还不错 而且眼睛已经开始消肿了，只 是眼睛周围有一些发青，客服 说是因为在恢复中,期待最终 的效果。',
-        pro:'韩式双眼皮+开眼角',
+        pro: ['韩式双眼皮', '开眼角'],
         time:'2017-8-23',
         head:'/img/head2.jpg',
         name:'安妮Baby'

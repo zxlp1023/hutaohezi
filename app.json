@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/evaluate/evaluate",
     "pages/index/index",
+    "pages/sheSaid/sheSaid",
+    "pages/evaluate/evaluate",
     "pages/product/product",
     "pages/my/my",
     "pages/msg/msg",
     "pages/refund/refund",
     "pages/orders/orders",
-    "pages/sheSaid/sheSaid",
     "pages/confirmOrder/confirmOrder",
     "pages/product/comment",
     "pages/meipin/meipin"

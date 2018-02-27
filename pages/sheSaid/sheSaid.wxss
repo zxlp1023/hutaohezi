@@ -4,3 +4,6 @@
 .list-item-img{width: 327rpx;   }
 
 .list-item-con{ padding: 20rpx;}
+
+.radius5{ background: #000; margin-right: 10rpx; border-radius: 8rpx; color: #fff; display: inline-block; padding: 4rpx 12rpx;}
+.radius5:first-of-type{ margin-left: 0;}

@@ -24,7 +24,7 @@
     <view class="mt40">
       <view class="thumb" wx:for="{{imgs}}" wx:key="{{index}}">
         <icon class="close" type="clear" size="20" color="#ccc" data-index="{{index}}" bindtap="deleteImg" />
-        <image class="up-img" src="{{item}}" bindtap="viewImg" />
+        <image class="up-img" src="{{item}}" data-src="{{item}}" bindtap="previewImg" />
       </view>
       <view class="thumb" hidden="{{isMax}}">
         <image bindtap="upImg" src="/img/icon/upImg.png" class="up-img mt10" />
