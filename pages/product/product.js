@@ -15,7 +15,7 @@ Page({
     sales: 23,
     group: 2,
     monthPay: 583,
-    ping: 'flase' //正在美拼
+    ping: 'flase', //正在美拼
   },
   showPing:function () {  //显示正在美拼
     this.setData({
@@ -31,7 +31,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    const url = getApp().data.api
+    const that = this
+    // that.setData({
+    //   id:options.id
+    // })
+    // console.log( options.id + '2222')
+    wx.request({
+      url: url + '/goods/details',
+      data:{
+        id:options.id
+      }
+    })
   },
 
   /**

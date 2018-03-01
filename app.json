@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/product/product",
     "pages/sheSaid/sheSaid",
     "pages/evaluate/evaluate",
-    "pages/product/product",
     "pages/my/my",
     "pages/msg/msg",
     "pages/refund/refund",

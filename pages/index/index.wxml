@@ -10,8 +10,7 @@
   </view>
   <view class="category" wx:if="{{toggle}}">
     <view class="">
-      <navigator class="category-text" wx:for="{{test}}" url="" wx:key="{{item}}">{{item}}</navigator>
-      <!-- <navigator class="category-text" wx:for="{{categorys}}" url="" wx:key="{{item.id}}">{{item.name}}</navigator> -->
+      <navigator class="category-text" wx:for="{{categorys}}" url="" wx:key="{{item.id}}">{{item.name}}</navigator>
     </view>
   </view>
   <swiper class="index-swiper"  indicator-dots="{{indicatorDots}}"
@@ -23,34 +22,36 @@
     </block>
   </swiper>
   <view class="proList">
-     <view class="pro" wx:for="{{proList}}" wx:key="{{item.id}}">
-      <view class="pro-hd flex">
-        <view class="pro-hd-l">
-          <image class="pro-hd-img" src="{{item.headImg}}" />
-        </view>
-        <view class="pro-hd-r ml10">
-          <view class="pro-hd-title fz28">{{item.title}}</view>
-          <view class="pro-hd-intro fz24 hui5f">{{item.intro}}</view>
-        </view>
-      </view>
-      <image class="pro-bd-pic mt20" src="{{item.pic}}" />
-      <view class="pro-ft">
-        <view class="flex-between">
-          <view class="fz40 red238">￥{{item.price}}</view>
-          <view>
-            <navigator class="btn-red" url="{{item.url}}">立即购买</navigator>
+     <block class="pro" wx:for="{{proList}}" wx:key="{{item.id}}">
+      <navigator url="/pages/product/product?id={{item.id}}" hover-class="none">
+        <view class="pro-hd flex">
+          <view class="pro-hd-l">
+            <image class="pro-hd-img" src="{{imgurl}}{{item.head_img}}" />
+          </view>
+          <view class="pro-hd-r ml10">
+            <view class="pro-hd-title fz28">{{item.name}}</view>
+            <view class="pro-hd-intro fz24 hui5f">{{item.intro}}</view>
           </view>
         </view>
-        <view class="flex-between">
-          <view class="fz32">月供:￥{{item.price2}}/期</view>
-          <view class="fz24 hui5f">
-            <image class="pro-ft-heart" src="../../img/heart.jpg" />
-            <text class="ml5">销量:{{item.sales}}</text>
-            <text class="ml10">评论:{{item.evaluate}}条</text>
+        <image class="pro-bd-pic mt20" src="{{imgurl}}{{item.img}}" />
+        <view class="pro-ft">
+          <view class="flex-between">
+            <view class="fz40 red238">￥{{item.price}}</view>
+            <view>
+              <view class="btn-red">立即购买</view>
+            </view>
+          </view>
+          <view class="flex-between">
+            <view class="fz32">月供:￥{{item.price2}}/期</view>
+            <view class="fz24 hui5f">
+              <image class="pro-ft-heart" src="../../img/heart.jpg" />
+              <text class="ml5">销量:{{item.sell}}</text>
+              <text class="ml10">评论:{{item.evaluate}}条</text>
+            </view>
           </view>
         </view>
-      </view>
-     </view>
+      </navigator>
+     </block>
   </view>
 </view>
 <view class="foot">
