@@ -3,6 +3,7 @@
 // const app = getApp()
 Page({
   data:{
+    test:[],
     categorys:[
       { id: 1,name:'眼睛'},
       { id: 2,name:'鼻部'},
@@ -63,6 +64,27 @@ Page({
       }
     ]
   },
+  onLoad: function () {
+    const requestTask = wx.request({
+      url: 'http://172.16.0.97/goods/goods_type', //仅为示例，并非真实的接口地址
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        let that = this
+        console.log(res.data)
+        that.setData({
+          test: res.data
+        })
+      }
+    })
+    // console.log(1)
+  }
+  ,
   showCategory: function () {
     // console.log(11111)
     this.setData({

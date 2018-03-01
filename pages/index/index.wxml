@@ -10,7 +10,8 @@
   </view>
   <view class="category" wx:if="{{toggle}}">
     <view class="">
-      <navigator class="category-text" wx:for="{{categorys}}" url="" wx:key="{{item.id}}">{{item.name}}</navigator>
+      <navigator class="category-text" wx:for="{{test}}" url="" wx:key="{{item}}">{{item}}</navigator>
+      <!-- <navigator class="category-text" wx:for="{{categorys}}" url="" wx:key="{{item.id}}">{{item.name}}</navigator> -->
     </view>
   </view>
   <swiper class="index-swiper"  indicator-dots="{{indicatorDots}}"
